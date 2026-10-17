@@ -1,0 +1,581 @@
+body {
+    font-family: sans-serif;
+    color: black;
+    background: linear-gradient(-45deg, rgb(150, 29, 2), rgb(12, 3, 133), rgb(90, 3, 119), rgb(103, 0, 239));
+    background-size: 400% 400%;
+    animation: 40s ease infinite bodyMovement;
+}
+@keyframes bodyMovement {
+    0% {
+        color: rgb(25,32,53);
+        background-position: 0% 50% ;
+    }
+    50% {
+background-position: 50% 100% ;
+    }
+    100% {
+background-position:0% 50% ;
+    }
+}
+#calculator {
+    border: solid 3.5px rgb(255,255,255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0,0,0);
+    overflow: scroll;
+    margin: auto;
+    display: block;
+    height: 700px;
+    width: 90%;
+}
+header{
+          font-size: 2.5em;
+          padding: 10px;
+          background: rgba(0, 0, 141, 0.403);
+}
+summary {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(220,220,220);
+    background: rgb(30,30,30);
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    transition: all 0.2s ease-in-out;
+    overflow-wrap: break-word;
+}
+summary:hover{
+    background: rgb(40,40,40);
+    border-color: rgb(240,240,240);
+}
+
+#googleSearching {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 15px;
+    border: solid 2px rgb(220,220,220);
+    background: linear-gradient(50deg, rgb(0, 0, 0), rgb(82, 19, 255));    
+    box-shadow: 0px 0px 10px rgba(12, 134, 255, 0.641);
+}
+#google-title {
+    font-family: 'Righteous', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: rgb(255,255,255);
+    animation: 20s ease infinite dynamicTitle;
+}
+@keyframes dynamicTitle {
+    0% {
+       text-shadow: 0px 0px 15px rgb(1, 105, 217);
+        color: rgb(0, 123, 255);
+    }
+    50% {
+       text-shadow: 0px 0px 15px rgb(0, 148, 207);
+        color: rgb(0, 183, 255);
+    }
+    100% {
+        text-shadow: 0px 0px 15px rgb(35,42, 242);
+        color: rgb(0, 123, 255);
+    }
+}
+.googleSearch {
+    font-family: 'Concert One', sans-serif;
+    background: linear-gradient(-23deg, rgb(0, 0, 0), rgb(1, 32, 121));
+    color: rgb(255,255,255);
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 5.5px;
+    border-radius: 10px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 80%;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border: solid 2px rgb(0, 89, 255);
+}
+
+
+#displaytitle {
+          transition: all 0.2s ease-in-out;
+          text-align: center;
+          font-family: 'Righteous', sans-serif;
+          text-shadow: 0px 0px 20px rgb(0, 0, 0);
+          animation: titleColors 10s ease infinite
+}
+@keyframes titleColors{
+    0% {
+        text-shadow: 0px 0px 20px rgb(0, 51, 255);
+    }
+    50% {
+        text-shadow: 0px 0px 20px rgb(0, 157, 255);
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgb(0, 51, 255);
+    }
+}
+#digitalclock{
+          overflow: visible;
+          margin: auto;
+          padding: 5px;
+          border-radius: 10px;
+          border: solid 2px transparent;
+          box-shadow: 0px 0px 20px rgb(0, 53, 74);
+          border: solid 2px rgba(0, 186, 248, 0.745);
+          margin-top: 2.5%;
+          background: linear-gradient(90deg, rgba(24, 4, 175, 0.397), rgba(0, 102, 226, 0.496));
+          background-size: 200% 200%;
+          text-align: center;
+          width: 50%;
+          text-shadow: 0px 0px 20px rgb(0, 0, 0);
+          animation: dynamicColors 10s ease infinite;
+}
+@keyframes dynamicColors{
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#digitalwatch {
+          color: rgb(253, 254, 255);
+          text-shadow: 0px 0px 20px rgb(0, 0, 0);
+          overflow-wrap: anywhere;
+          font-size: 50px;
+          font-family: 'Righteous', sans-serif;
+}
+#digitaldata{
+          font-family: 'Righteous', sans-serif;
+          text-shadow: 0px 0px 20px rgba(174, 0, 205, 0.952);
+          color: rgba(220, 226, 227, 0.993);
+          overflow-wrap: anywhere;
+          font-size: 40px;
+}
+#Youtube {
+    margin: auto;
+    width: 80%;
+    margin-top: 2.5%;
+    background: linear-gradient(50deg, rgb(120, 12, 0), rgba(197, 39, 39, 0.952));
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(230,230,230);
+}
+#youtubetitle {
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 5em;
+    color: white;
+}
+#youtube {
+    overflow-wrap: break-word;
+    font-family: 'Concert One', sans-serif;
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5px;
+    font-size: 3em;
+    color: white;
+    text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgb(0,0,0);
+  border-radius: 20px;
+  border: solid 5px rgb(218, 218, 218);
+  background: rgb(227, 37, 37);
+}
+#youtubemusic{
+      overflow-wrap: break-word;
+    font-family: 'Concert One', sans-serif;
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5px;
+    font-size: 3em;
+    color: white;
+    text-decoration: none;
+  text-align: center;
+  color: rgb(255,0,0);
+  box-shadow: 0px 0px 20px rgb(0,0,0);
+  border-radius: 20px;
+  border: solid 5px rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+.youtubeSearching {   
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgb(0,0,0);
+  border-radius: 20px;
+  border: solid 5px rgb(218, 218, 218);
+  background: rgb(100, 1, 1);
+}
+.navtitle{
+    overflow-wrap: break-word; 
+    padding: 10px;
+    text-align: center;
+    font-family: 'audiowide', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+.navigation {
+    border: 2.5px solid;
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(-100deg, rgb(120, 2, 124), rgba(2, 64, 91, 0.327), rgb(35,32,63), rgb(79, 3, 156));
+    background-size: 400% 400%;
+    animation: navColorMovement 20s infinite ease;
+}
+@keyframes navColorMovement {
+    0% {
+        border: solid 2px rgb(146, 7, 252);
+        box-shadow: 0px 0px 30px rgb(0, 157, 255);
+background-position: 0% 50%;
+    }
+    50% {
+        border: solid 2px 55, 0, 255;
+         box-shadow: 0px 0px 30px rgb(55, 0, 255);
+background-position: 50% 100%;
+    }
+    100% {
+         border: solid 2px rgb(146, 7, 252);
+         box-shadow: 0px 0px 30px rgb(0, 157, 255);
+background-position: 0% 50%;
+    }
+}
+
+.links {
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5em;
+    display: block;
+    background: whitesmoke;
+    color: black;
+    text-decoration: none;
+    
+}
+.links:hover{
+    transition-duration: 0.5s;
+    border-radius: 20px; 
+}
+#gemini{
+    color: white;
+    background: linear-gradient(35deg, rgb(0, 0, 0), rgb(0, 4, 255));
+}
+#gemini:hover{
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    background: linear-gradient(35deg, rgb(0, 0, 0), rgb(16, 22, 130));
+    border: solid 2.5px rgb(48, 109, 232);
+}
+#chatgpt{
+background: rgb(255,255,255);
+color: rgb(0,0,0);
+}
+#chatgpt:hover{
+    border: solid 2px white;
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+#perplexity {
+    color: rgb(9, 195, 211);
+    background: rgb(18, 18, 18);
+    border: solid 2.5px rgb(0, 253, 253);
+}
+#perplexity:hover {
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-shadow: 0px 0px 20px rgb(7, 174, 186);
+    background: linear-gradient(35deg, rgb(0, 0, 0), rgb(5, 216, 244));
+    border: solid 2.5px rgb(7, 220, 253);
+}
+#claude {
+  color: rgb(255,255,255);
+  background: rgb(255, 121, 72);
+  border: solid 2.5px rgb(255, 121, 72);
+}
+#claude:hover{
+    border: solid 2.5px rgb(255, 121, 72);
+    background: rgb(255, 149, 105);
+    box-shadow: 0px 0px 20px rgb(255, 121, 72);
+    text-shadow: 0px 0px 20px rgb(255, 121, 72);
+}
+#mdn {
+  color: rgb(255,255,255);
+  background: rgb(38, 38, 38);
+  border: solid 2.5px rgb(221, 218, 216);
+}
+#mdn:hover{
+    color: rgb(240,240,240);
+    background: rgb(0,0,0);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#w3schools{ 
+    color: rgb(39, 172, 34);
+    background: rgb(227, 226, 226);
+    border: solid 2.5px rgb(1, 170, 9);
+}
+#w3schools:hover{
+    color: rgb(240,240,240);
+    background: rgb(2, 109, 15);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(7, 232, 108, 0.716);
+}
+#stackoverflow{
+    color: rgb(255, 255, 255);
+    background: rgb(14, 13, 13);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#stackoverflow:hover{
+    color: rgb(14, 14, 14);
+    background: rgb(215, 212, 212);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#github{
+    color: rgb(255, 255, 255);
+    background: rgb(14, 13, 13);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#github:hover{
+    color: rgb(240,240,240);
+    background: rgb(0,0,0);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#netlify{
+    color: rgb(3, 244, 253);
+    background: rgb(58, 57, 57);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#netlify:hover{
+    color: rgb(0, 244, 248);
+    background: rgb(85, 84, 84);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#vercel{
+    color: rgb(241, 233, 233);
+    background: rgb(14, 13, 13);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#vercel:hover{
+    color: rgb(11, 11, 11);
+    background: rgb(216, 216, 216);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#flightradar24{
+    color: rgb(239, 215, 0);
+    background: rgb(3, 29, 113);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#flightradar24:hover{
+    color: rgb(255, 254, 254);
+    background: rgb(2, 11, 92);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#heavens-above{
+    color: rgb(3, 86, 203);
+    background: rgb(230, 225, 225);
+    border: solid 2.5px rgb(221, 218, 216);
+}
+#heavens-above:hover{
+    color: rgb(13, 13, 13);
+    background: rgb(216, 216, 216);
+    box-shadow: 0px 0px 20px rgba(221, 218, 216, 0.786);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.396);
+}
+#googlemaps{
+  color: rgb(236, 235, 235);
+  background:linear-gradient(70deg, rgba(6, 3, 175, 0.829), rgba(196, 0, 231, 0.833));
+  border: solid 2.5px rgb(221, 218, 216);
+}
+#canva{
+  color: rgb(236, 235, 235);
+  background:linear-gradient(70deg, rgba(0, 202, 247, 0.829), rgba(0, 12, 231, 0.833));
+  border: solid 2.5px rgb(221, 218, 216);
+}
+#canva:hover{
+    transition-duration: 0.5s;
+    background:linear-gradient(70deg, rgb(13, 205, 247), rgba(207, 35, 251, 0.833));
+}
+#duolingo{
+    border: solid 2px rgb(255,255,255);
+    color: rgb(231, 230, 230);
+    background: rgb(1, 176, 1);
+}
+#memrise{
+    border: solid 2.5px rgb(0, 0, 0);
+    color: rgb(17, 16, 16);
+    background: rgb(248, 251, 50);
+    box-shadow: 0px 0px 20px rgb(0,0,0);
+}
+details {
+    overflow-wrap: break-word;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  border-radius: 20px;
+  border: solid 5px rgb(249, 251, 255);
+}
+.settings-title {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5em;
+    color: rgb(235, 235, 235);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.473);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px rgb(220,220,220);
+    background: rgb(0, 0, 0);
+}
+.colorstheme {
+    box-shadow: 0px 0px 10px rgb(126, 126, 129);
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px;
+}
+.colorstheme:hover{
+    transition: 0.5s;
+  border-radius: 10px;
+}
+#darkMode {
+    color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  border-color: rgb(120, 117, 117);
+}
+#darkMode:hover {
+  background-color: rgb(19, 19, 19);
+  border-color: rgb(255,255,255);
+}
+#jsMode {
+    color: rgb(0, 0, 0);
+  background-color: rgb(253, 232, 5);
+  border-color: rgb(7, 7, 7);
+}
+#jsMode:hover {
+  background-color: rgb(238, 238, 5);
+  border-color: rgb(11, 11, 11);
+}
+#purpleMode {
+    color: rgb(255,255,255);
+  background-color: rgb(146, 7, 252);
+  border-color: rgb(7, 7, 7);
+}
+#purpleMode:hover {
+  background-color: rgb(187, 7, 227);
+  border-color: rgb(0, 128, 233);
+}
+#blueMode {
+    color: rgb(255,255,255);
+  background-color: rgb(40, 4, 220);
+  border-color: rgb(0, 255, 238);
+}
+#blueMode:hover {
+  background-color: rgb(0, 15, 129);
+  border-color: rgb(16, 10, 187);
+}
+#redMode {
+    color: rgb(255, 255, 255);
+  background-color: rgb(195, 1, 1);
+  border-color: rgb(65, 1, 1);
+}
+#redMode:hover {
+  background-color: rgb(114, 3, 3);
+  border-color: rgb(255, 8, 8);
+}
+#Restart {
+    margin: auto;
+    display: block;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    overflow-wrap: break-word;
+    padding: 2.5px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: solid 2px rgb(0,0,0);
+    color: rgb(28, 28, 28);
+    
+}
+#Restart:hover{
+    cursor: grab;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    background: rgb(53, 53, 53);
+    color: rgb(200, 198, 196);
+    box-shadow: 0px 0px 10px rgb(229, 229, 226);
+    border-color: #ffff;
+}
+#background-settings {
+    border-top: 4px solid rgb(255,255,255);
+   border-bottom: 4px solid rgb(255,255,255);
+   box-shadow: 0px 0px 10px rgb(0, 242, 255);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: rgba(0, 0, 0, 0.596);
+    padding: 1px;
+}
+
+footer {
+    border-top: solid 2px rgba(255, 255, 255, 0.434);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.449);
+    font-family: 'Audiowide', sans-serif;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.653);
+    background: rgba(4, 4, 103, 0.44);
+}
+#tiktok-link{
+    color: rgb(255,255,255);
+    opacity: 50%;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
